@@ -33,6 +33,7 @@ INSERT INTO `gameobject_queststarter` (`id`, `quest`) VALUES (180717, 8743);
 
 SET @STRING_ENTRY := 41100;
 DELETE FROM `acore_string` WHERE `entry` IN  (@STRING_ENTRY);
+DELETE FROM `acore_string_locale` WHERE `entry` IN  (@STRING_ENTRY);
 INSERT INTO `acore_string` (`entry`, `content_default`) VALUES
 (@STRING_ENTRY, '%s, Champion of the Bronze Dragonflight, has rung the Scarab Gong. The ancient gates of Ahn''Qiraj open, revealing the horrors of a forgotten war...');
 
